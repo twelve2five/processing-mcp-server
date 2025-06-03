@@ -8,6 +8,25 @@
 
 **[Watch the demo video here - See it in action!](https://www.loom.com/share/24a238aadb1c44acbf10fac17cddfe25)**
 
+## 🚀 Quick Setup
+
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/twelve2five/processing-mcp-server.git
+   cd processing-mcp-server
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   uv pip install fastmcp
+   # or
+   pip install fastmcp
+   ```
+
+3. **Configure Claude Desktop** (see Configuration section below)
+
+4. **Restart Claude and start creating!**
+
 ## Features
 
 - 🚀 Create and run Processing sketches from AI conversations
@@ -23,18 +42,32 @@
 - Python 3.8+
 - [Processing](https://processing.org/download) installed on your system
 - `uv` package manager (or use pip)
+- Claude Desktop app
 
-### Install via uv
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/twelve2five/processing-mcp-server.git
+cd processing-mcp-server
+```
+
+### Step 2: Install Dependencies
+
+#### Install via uv
 
 ```bash
 uv pip install fastmcp
 ```
 
-### Install via pip
+#### Install via pip
 
 ```bash
 pip install fastmcp
 ```
+
+### Step 3: Configure Claude Desktop
+
+See the Configuration section below to add the server to your Claude Desktop config.
 
 ## Configuration
 
@@ -59,7 +92,7 @@ Add this to your Claude Desktop config file:
       "command": "uv",
       "args": [
         "run",
-        "path/to/processing_mcp_server.py"
+        "C:\\path\\to\\processing-mcp-server\\processing_mcp_server.py"
       ],
       "env": {
         "PROCESSING_PATH": "C:\\Program Files\\Processing\\Processing.exe",
@@ -78,7 +111,7 @@ Add this to your Claude Desktop config file:
       "command": "uv",
       "args": [
         "run",
-        "path/to/processing_mcp_server.py"
+        "/path/to/processing-mcp-server/processing_mcp_server.py"
       ],
       "env": {
         "PROCESSING_PATH": "/Applications/Processing.app/Contents/MacOS/Processing",
@@ -97,7 +130,7 @@ Add this to your Claude Desktop config file:
       "command": "uv",
       "args": [
         "run",
-        "path/to/processing_mcp_server.py"
+        "/path/to/processing-mcp-server/processing_mcp_server.py"
       ],
       "env": {
         "PROCESSING_PATH": "/usr/bin/processing",
@@ -107,6 +140,12 @@ Add this to your Claude Desktop config file:
   }
 }
 ```
+
+**Note:** Replace `/path/to/processing-mcp-server/` with the actual path where you cloned the repository.
+
+### 3. Restart Claude Desktop
+
+After updating the configuration file, restart Claude Desktop for the changes to take effect.
 
 ## Usage Examples
 
@@ -168,6 +207,10 @@ If no configuration is provided, the server uses these defaults:
 - **Save Location**: `~/Documents/Processing/sketches`
 
 ## Troubleshooting
+
+### Server not showing up in Claude
+
+Make sure to restart Claude Desktop after updating the configuration file.
 
 ### Processing not found
 
