@@ -1,13 +1,20 @@
 # Processing MCP Server
 
-An MCP (Model Context Protocol) server that enables AI assistants to create and run Processing sketches directly through natural language commands.
+🎨 **Create visual art and games with AI** - An MCP (Model Context Protocol) server that enables AI assistants to create and run Processing sketches directly through natural language commands.
+
+⭐ **Give us a star if you find this useful!**
+
+## 🎥 Demo Video
+
+**[Watch the demo video here - See it in action!](https://www.loom.com/share/24a238aadb1c44acbf10fac17cddfe25)**
 
 ## Features
 
-- Create and run Processing sketches from AI conversations
-- Automatically saves sketches with timestamps
-- Configurable Processing executable path and save location
-- Simple tool interface for AI assistants
+- 🚀 Create and run Processing sketches from AI conversations
+- 💾 Automatically saves sketches with timestamps
+- ⚙️ Configurable Processing executable path and save location
+- 🤖 Simple tool interface for AI assistants
+- 🎮 Includes 6 ready-to-run demos (particles, 3D art, games, and more!)
 
 ## Installation
 
@@ -101,13 +108,40 @@ Add this to your Claude Desktop config file:
 }
 ```
 
-## Usage
+## Usage Examples
 
 Once configured, you can ask your AI assistant to:
 
+### 🎯 Simple Animations
 - "Create a Processing sketch that draws a bouncing ball"
-- "Make a colorful spiral animation in Processing"
-- "Generate a Processing sketch with particle effects"
+- "Make a colorful spiral animation"
+- "Draw a clock that shows the current time"
+
+### ✨ Particle Effects
+- "Create a particle system that follows my mouse"
+- "Make fireworks that explode when I click"
+- "Generate a starfield simulation"
+
+### 🎮 Games
+- "Build a Snake game"
+- "Create a Pong clone"
+- "Make a simple maze game"
+
+### 🎨 Generative Art
+- "Create a generative art piece with flowing waves"
+- "Make a 3D rotating geometric shape"
+- "Generate the Matrix digital rain effect"
+
+## Included Examples
+
+Check out the `/examples` folder for ready-to-run demos:
+
+1. **bouncing_ball.pde** - Classic animation with trail effects
+2. **particle_system.pde** - Interactive particles following your mouse
+3. **3d_geometric_art.pde** - Mesmerizing 3D shapes with rainbow colors
+4. **matrix_rain.pde** - The iconic Matrix digital rain effect
+5. **wave_art.pde** - Beautiful animated wave patterns
+6. **snake_game.pde** - Fully playable Snake game
 
 The AI will use the `run_processing_java_cli` tool to create and launch your sketch.
 
